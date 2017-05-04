@@ -8,6 +8,7 @@ import com.didispace.yiduiduo.Brand;
 import com.didispace.yiduiduo.BrandMapper;
 import com.didispace.yiduiduo.Product;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,17 +29,33 @@ public class TestController {
     @Autowired(required = false)
     private BrandMapper brandMapper;
 
+    @RequestMapping("/user/{id}")
+    public String user(@PathVariable Long id) throws Exception{
+        return "id = " + id;
+    }
+
     /**
      * 初始测试
      * @return
      */
     @RequestMapping("/")
-    public String getId() {
+    public String getId() throws Exception{
         User user = new User();
         user.setAge(23);
         user.setName("lance");
         int i = userMapper.insert(user);
         return "id = " + user.getId() + ", 影响的行数 = " + i;
+    }
+
+
+    /**
+     * exception 测试
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping("/exception")
+    public String exception() throws Exception{
+        throw new Exception("错误");
     }
 
 
