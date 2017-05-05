@@ -23,6 +23,7 @@
   </properties>
 
   <dependencies>
+    <!--spring boot 的 web 组件-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
@@ -34,33 +35,44 @@
       <!--</exclusions>-->
     </dependency>
 
+    <!--spring boot 测试-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
 
+    <!--spring boot 的 mybatis 组件-->
     <dependency>
       <groupId>org.mybatis.spring.boot</groupId>
       <artifactId>mybatis-spring-boot-starter</artifactId>
       <version>1.1.1</version>
     </dependency>
 
+    <!--mysql -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.21</version>
     </dependency>
 
+    <!--spring boot 热更新-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
     </dependency>
 
+    <!--spring boot 的 log4j 组件-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-log4j</artifactId>
+    </dependency>
+
+    <!--spring boot 的 thymeleaf 组件-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
 
   </dependencies>

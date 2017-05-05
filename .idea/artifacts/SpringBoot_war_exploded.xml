@@ -48,6 +48,14 @@
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:1.5.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-log4j:unknown" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-thymeleaf:1.5.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf-spring4:2.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf:2.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: ognl:ognl:3.0.8" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.21.0-GA" />
+          <element id="library" level="project" name="Maven: org.unbescape:unbescape:1.1.0.RELEASE" />
+          <element id="library" level="project" name="Maven: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0" />
+          <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy:2.4.10" />
         </element>
       </element>
       <element id="directory" name="META-INF">
