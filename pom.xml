@@ -27,12 +27,12 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <!--<exclusions>-->
-        <!--<exclusion>-->
-          <!--<groupId>org.springframework.boot</groupId>-->
-          <!--<artifactId>spring-boot-starter-logging</artifactId>-->
-        <!--</exclusion>-->
-      <!--</exclusions>-->
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-logging</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <!--spring boot 测试-->
@@ -63,11 +63,7 @@
       <optional>true</optional>
     </dependency>
 
-    <!--spring boot 的 log4j 组件-->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-log4j</artifactId>
-    </dependency>
+
 
     <!--spring boot 的 thymeleaf 组件-->
     <dependency>
